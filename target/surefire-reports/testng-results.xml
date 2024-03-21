@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-21T22:16:11 IST" name="Suite" finished-at="2024-03-21T22:23:12 IST" duration-ms="420673">
+    <groups>
+    </groups>
+    <test started-at="2024-03-21T22:16:11 IST" name="Test" finished-at="2024-03-21T22:23:12 IST" duration-ms="420673">
+      <class name="com.test.BestBuy">
+        <test-method is-config="true" signature="brokenUrl_TC01()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:16:11 IST" name="brokenUrl_TC01" finished-at="2024-03-21T22:16:22 IST" duration-ms="11153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brokenUrl_TC01 -->
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:16:22 IST" name="launchSite" finished-at="2024-03-21T22:16:31 IST" duration-ms="9294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="login_InvalidEmail_TC01()[pri:1, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:16:31 IST" name="login_InvalidEmail_TC01" finished-at="2024-03-21T22:16:47 IST" duration-ms="15516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_InvalidEmail_TC01 -->
+        <test-method is-config="true" signature="closeSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:16:47 IST" name="closeSite" finished-at="2024-03-21T22:16:47 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:16:47 IST" name="launchSite" finished-at="2024-03-21T22:16:57 IST" duration-ms="9410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="signUp_MandatoryCheck_TC02()[pri:2, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:16:57 IST" name="signUp_MandatoryCheck_TC02" finished-at="2024-03-21T22:17:05 IST" duration-ms="8643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp_MandatoryCheck_TC02 -->
+        <test-method is-config="true" signature="closeSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:17:05 IST" name="closeSite" finished-at="2024-03-21T22:17:05 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:17:05 IST" name="launchSite" finished-at="2024-03-21T22:17:13 IST" duration-ms="7276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="login_MandPassword_TC03()[pri:3, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:17:13 IST" name="login_MandPassword_TC03" finished-at="2024-03-21T22:17:28 IST" duration-ms="15244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_MandPassword_TC03 -->
+        <test-method is-config="true" signature="closeSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:17:28 IST" name="closeSite" finished-at="2024-03-21T22:17:28 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:17:28 IST" name="launchSite" finished-at="2024-03-21T22:17:37 IST" duration-ms="8734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="signUp_TC04()[pri:4, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:17:37 IST" name="signUp_TC04" finished-at="2024-03-21T22:18:05 IST" duration-ms="27800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp_TC04 -->
+        <test-method is-config="true" signature="closeSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:18:05 IST" name="closeSite" finished-at="2024-03-21T22:18:05 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:18:05 IST" name="launchSite" finished-at="2024-03-21T22:18:12 IST" duration-ms="7457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="signIn_TC05()[pri:5, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:18:12 IST" name="signIn_TC05" finished-at="2024-03-21T22:18:34 IST" duration-ms="22012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn_TC05 -->
+        <test-method is-config="true" signature="closeSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:18:34 IST" name="closeSite" finished-at="2024-03-21T22:18:34 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:18:34 IST" name="launchSite" finished-at="2024-03-21T22:19:02 IST" duration-ms="27954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="allMenuValidation_TC06()[pri:6, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:19:02 IST" name="allMenuValidation_TC06" finished-at="2024-03-21T22:19:50 IST" duration-ms="47813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allMenuValidation_TC06 -->
+        <test-method is-config="true" signature="closeSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:19:50 IST" name="closeSite" finished-at="2024-03-21T22:19:50 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:19:50 IST" name="launchSite" finished-at="2024-03-21T22:19:58 IST" duration-ms="7636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="bottomLinksValidation_TC07()[pri:7, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:19:58 IST" name="bottomLinksValidation_TC07" finished-at="2024-03-21T22:19:58 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bottomLinksValidation_TC07 -->
+        <test-method is-config="true" signature="closeSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:19:58 IST" name="closeSite" finished-at="2024-03-21T22:19:58 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:19:58 IST" name="launchSite" finished-at="2024-03-21T22:20:10 IST" duration-ms="11050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="search_AddItem_Cart_TC08()[pri:8, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:20:10 IST" name="search_AddItem_Cart_TC08" finished-at="2024-03-21T22:21:02 IST" duration-ms="52164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_AddItem_Cart_TC08 -->
+        <test-method is-config="true" signature="closeSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:21:02 IST" name="closeSite" finished-at="2024-03-21T22:21:02 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:21:02 IST" name="launchSite" finished-at="2024-03-21T22:21:14 IST" duration-ms="12372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="shopDept_AddItem_Cart_TC09()[pri:9, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:21:14 IST" name="shopDept_AddItem_Cart_TC09" finished-at="2024-03-21T22:22:19 IST" duration-ms="64685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopDept_AddItem_Cart_TC09 -->
+        <test-method is-config="true" signature="closeSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:22:19 IST" name="closeSite" finished-at="2024-03-21T22:22:19 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+        <test-method is-config="true" signature="launchSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:22:19 IST" name="launchSite" finished-at="2024-03-21T22:22:29 IST" duration-ms="10199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="shopBrand_AddItem_Cart_TC10()[pri:10, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:22:29 IST" name="shopBrand_AddItem_Cart_TC10" finished-at="2024-03-21T22:23:11 IST" duration-ms="42121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopBrand_AddItem_Cart_TC10 -->
+        <test-method is-config="true" signature="closeSite()[pri:0, instance:com.test.BestBuy@624ea235]" started-at="2024-03-21T22:23:11 IST" name="closeSite" finished-at="2024-03-21T22:23:12 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+      </class> <!-- com.test.BestBuy -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
