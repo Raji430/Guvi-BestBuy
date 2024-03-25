@@ -18,6 +18,7 @@ import com.utils.Utility;
 
 public class BestBuy extends Utility
 {
+	//Launch Browser and open the BestBuy page
 	@BeforeMethod
 	public void launchSite() throws Exception
 	{
@@ -26,6 +27,7 @@ public class BestBuy extends Utility
 		HomePage.countrySelection();
 	}
 	
+	// Validate Broken URL
 	@BeforeTest
 	public void brokenUrl_TC01()
 	{	
@@ -41,6 +43,7 @@ public class BestBuy extends Utility
         }        
     } 
 	
+	//Validate error message when user tries to login using Invalid email
 	@Test(priority=1)
 	public void login_InvalidEmail_TC01() throws Exception
 	{
@@ -54,6 +57,7 @@ public class BestBuy extends Utility
 		assertEquals(actLoginInvalidMsg, expLoginInvalidMsg);
 	}
 	
+	//Validate error message when user miss to provide mandatory data during SignUp
 	@Test(priority=2)
 	public void signUp_MandatoryCheck_TC02() throws Exception
 	{
@@ -74,6 +78,8 @@ public class BestBuy extends Utility
 			assertEquals(actValMandMsg, entry.getKey());			
 		} 	
 	} 
+	
+	//Validate error message is thrown when user miss to enter password
 	@Test(priority=3)
 	public void login_MandPassword_TC03() throws Exception
 	{
@@ -87,6 +93,7 @@ public class BestBuy extends Utility
 		assertEquals(actLoginInvalidMsg, expLoginInvalidMsg);
 	} 
 	
+	//Validate user is able to Sign Up Successfully
 	@Test(priority=4)
 	public void signUp_TC04() throws Exception
 	{	
@@ -110,6 +117,7 @@ public class BestBuy extends Utility
 		}
     } 
 	
+	//Validate user is able to login successfully
 	@Test(priority=5)
 	public void signIn_TC05() throws Exception
 	{	
@@ -123,6 +131,7 @@ public class BestBuy extends Utility
 		assertEquals(actLoginSucMsg, expLoginSucMsg);
     } 
 
+	//Validate All Menu's
 	@Test(priority=6)
 	public void allMenuValidation_TC06() throws Exception
 	{		
@@ -142,6 +151,7 @@ public class BestBuy extends Utility
 		} 	
     } 	
 	
+	//Validate bottom links
 	@Test(priority=7)
 	public void bottomLinksValidation_TC07() throws Exception
 	{		
@@ -158,6 +168,7 @@ public class BestBuy extends Utility
 		}
     } 	
 	
+	//Validate user is able to add an item to cart using Search box 
 	@Test(priority=8)
 	public void search_AddItem_Cart_TC08() throws Exception
 	{
@@ -167,6 +178,7 @@ public class BestBuy extends Utility
 		assertEquals(actPaymentValMsg, expPaymentValMsg);
 	}
 		
+	//Validate user is able to add an item to cart using ShopByDept 
 	@Test(priority=9)
 	public void shopDept_AddItem_Cart_TC09() throws Exception
 	{
@@ -176,6 +188,7 @@ public class BestBuy extends Utility
 		assertEquals(actPaymentValMsg, expPaymentValMsg);
 	}
 	
+	//Validate user is able to add an item to cart using ShopByBrand
 	@Test(priority=10)
 	public void shopBrand_AddItem_Cart_TC10() throws Exception
 	{
@@ -185,6 +198,7 @@ public class BestBuy extends Utility
 		assertEquals(actPaymentValMsg, expPaymentValMsg);
 	}
 	
+	//Closes the browser
 	@AfterMethod
 	public void closeSite()
 	{
