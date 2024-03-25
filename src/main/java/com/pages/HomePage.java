@@ -26,16 +26,14 @@ public class HomePage extends Utility {
 	// Choose SignIn option and navigates to SignIn page for login
 	public static void signIn(String email, String password) throws Exception {
 
-		Thread.sleep(1000);
 		WebElement acccountBtn = driver.findElement(By.id("account-menu-account-button"));
+		waitForElement(acccountBtn);
 		clickOnElementActions(acccountBtn);
 
 		WebElement signIn = findElementByXpath("//div[@class='account-menu']//a[text()='Sign In']");
 		clickOnElementActions(signIn);
 
-		Thread.sleep(1000);
 		LoginPage.login(email, password);
-		Thread.sleep(1000);
 	}
 
 	// Choose Create Account for SignUp
@@ -79,8 +77,9 @@ public class HomePage extends Utility {
 		clickOnElementActions(addToCart);
 
 		contShopping();
-		Thread.sleep(3000);
+	
 		WebElement cart = findElementByXpath("//a[@title='Cart']");
+		waitForElement(cart);
 		clickOnElementActions(cart);
 	}
 
@@ -111,18 +110,15 @@ public class HomePage extends Utility {
 
 		WebElement model = findElementByXpath("//a[text()='Shop Galaxy S24']");
 		clickOnElementActions(model);
-
-		// Actions action = new Actions(driver);
+		
 		scrollByPixel();
 		WebElement moveToCart = findElementByXpath("//button[contains(@class,'c-button-lg')]");
-
-		Thread.sleep(1000);
-
+		
+		waitForElement(moveToCart);
 		clickonElement(moveToCart);
 
-		Thread.sleep(10000);
-
 		WebElement cart = findElementByXpath("//a[@title='Cart']");
+		waitForElement(cart);
 		clickOnElementActions(cart);
 	}
 
@@ -157,6 +153,7 @@ public class HomePage extends Utility {
 
 		// Click on Checkout
 		WebElement checkOut = findElementByXpath("//button[text()='Checkout']");
+		waitForElement(checkOut);
 		checkOut.click();
 
 		// Continue as a Guest
