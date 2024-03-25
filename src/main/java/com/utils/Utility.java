@@ -18,7 +18,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utility {
 
@@ -109,46 +111,43 @@ public class Utility {
 	public static void clickOnElementJS(WebElement element) throws Exception {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
-		Thread.sleep(2000);
+		waitForElement(element);
 		js.executeScript("arguments[0].click();", element);
 	}
 
 	// Click on Element
 	public static void clickonElement(WebElement element) throws Exception {
-		Thread.sleep(2000);
+		waitForElement(element);
 		element.click();
 	}
 
 	// Send Input to textbox fields
 	public static void sendInput(WebElement element, String value) throws Exception {
-		Thread.sleep(1000);
+		waitForElement(element);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		scrollToElement(element);
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 		js.executeScript("arguments[0].click();", element);
-		Thread.sleep(2000);
+		waitForElement(element);
 		element.click();
 		element.sendKeys(value);
 	}
 
 	// Scroll to element using Javascript Executor
 	public static void scrollJS(WebElement element) throws Exception {
-		Thread.sleep(1000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
 	// Scroll by Pixel using Javascript Executor
 	public static void scrollByPixel() throws Exception {
-		Thread.sleep(1000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(1000,1000)", "");
-		Thread.sleep(5000);
 	}
 
 	// Select method
 	public static void selectDropDown(Select dropDown, String value) throws Exception {
-		Thread.sleep(3000);
+		
 		dropDown.selectByVisibleText(value);
 	}
 
@@ -172,7 +171,13 @@ public class Utility {
 		return driver.findElement(By.xpath(path));
 
 	}
-
+	
+	// Wait for element
+		public static void waitForElement(WebElement element) {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+		}
+	
 	// Close the Window
 	public static void closeCurrentWindow() {
 		driver.close();
