@@ -25,8 +25,10 @@ public class SignUp extends Utility
 		sendInput(password, Utility.getData("Password"));
 		sendInput(repassword, Utility.getData("ConfirmPassword"));
 		sendInput(mobile, Utility.getData("MobileNumber"));		
-		Thread.sleep(500);		
-		scrollToElement(createAccount);		
+		driver.manage().wait(1000);		
+		
+		scrollToElement(createAccount);	
+		//waitForElement(createAccount);
 		createAccount.click();		
 
 		//Return the message to validate after clicking on create account
@@ -39,10 +41,11 @@ public class SignUp extends Utility
 	public static void createAccNoData() throws Exception 
 	{	
 		WebElement createAccount = findElementByXpath("//button[text()='Create an Account']");
-		Thread.sleep(2000);		
-		scrollToElement(createAccount);		
+				
+		scrollToElement(createAccount);	
+		waitForElement(createAccount);
 		createAccount.click();	
-		Thread.sleep(1000);
+		driver.manage().wait(1000);
 	}
 	
 	//Return SignUp form mandatory fields validation message 
