@@ -14,12 +14,13 @@ public class LoginPage extends Utility
 		WebElement password = driver.findElement(By.id("fld-p1"));
 		WebElement sigIn = findElementByXpath("//button[text()='Sign In']");
 		
+		waitForElement(emailId);
 		sendInput(emailId, email);		
 		
+		waitForElement(password);
 		sendInput(password, passwrd);	
 		
-		Thread.sleep(1000);
-		
+		waitForElement(sigIn);
 		clickOnElementActions(sigIn);			
 	}
 	
